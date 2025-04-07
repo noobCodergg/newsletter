@@ -32,26 +32,110 @@
 
       <!-- Second Row: Image and Text -->
       <tr>
-        <td colspan="2" width="33.33%" align="center" style=" padding: 15px;">
-            <img src="https://img.freepik.com/free-vector/webinar-landing-page-template_23-2148789256.jpg?ga=GA1.1.1519282541.1742302823&semt=ais_hybrid" 
-                 alt="Onboarding Illustration" 
-                 style="width: 200px; height: auto; display: block;">
+        <!-- Left Column: Thumbnail -->
+        <td colspan="3" align="left" valign="top" style="padding: 20px;">
+          <div style="position: relative; width: 100%; max-width: 100%;">
+            <a href="https://www.pexels.com/video/waves-rushing-to-the-shore-1321208/" 
+               target="_blank" 
+               style="text-decoration: none; display: inline-block;" 
+               title="Open video in new tab">
+                
+              <!-- Thumbnail Container -->
+              <div style="
+                  position: relative;
+                  width: 320px;
+                  height: 180px;
+                  border-radius: 12px;
+                  overflow: hidden;
+                  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1),
+                              0 2px 4px rgba(0, 0, 0, 0.05);
+                  transition: transform 0.3s ease, box-shadow 0.3s ease;
+                  background: #000;
+                  margin: 0 auto;
+              " 
+              onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 12px 24px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.08)';"
+              onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05)';">
+                
+                <!-- Thumbnail Image -->
+                <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                     alt="Video Thumbnail" 
+                     style="
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block;
+                        opacity: 0.9;
+                    ">
+        
+                <!-- Play Button Overlay -->
+                <div style="
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 70px;
+                    height: 70px;
+                    background: rgba(0, 0, 0, 0.6);
+                    border-radius: 50%;
+                    display: block;
+                    transition: background 0.3s ease;
+                    cursor: pointer;
+                " 
+                onmouseover="this.style.background='rgba(0, 0, 0, 0.8)'"
+                onmouseout="this.style.background='rgba(0, 0, 0, 0.6)'">
+                  <!-- Play Icon (Triangle) -->
+                  <div style="
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%, -50%) translateX(2px);
+                      width: 0;
+                      height: 0;
+                      border-left: 24px solid #ffffff;
+                      border-top: 14px solid transparent;
+                      border-bottom: 14px solid transparent;
+                  "></div>
+                </div>
+              </div>
+            </a>
+          </div>
         </td>
-
-        <td colspan="4" width="66.66%" align="left" style="padding: 20px;">
-            <p style="font-size: 20px; margin-bottom: 10px;">Join our webinar sessions to discover the power of EasyDrop.</p>
-
-            <!-- Buttons inside the text section -->
-            <div style="margin-top: 15px;">
-                <button style="background-color: #A32577; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-right: 10px;">
-                    Live Webinars
-                </button>
-                <button style="background-color: #fff; color: #A32577; padding: 10px 20px; border: 1px solid #A32577; border-radius: 5px; cursor: pointer;">
-                    Recorded Webinars
-                </button>
-            </div>
+      
+        <!-- Right Column: Text and Buttons -->
+        <td colspan="3" width="66.66%" align="left" valign="top" style="padding: 20px;">
+          <p style="font-size: 20px; margin-bottom: 10px;">
+            Join our webinar sessions to discover the power of EasyDrop.
+          </p>
+      
+          <!-- Buttons inside the text section -->
+          <div style="margin-top: 15px; overflow: hidden;">
+            <button style="
+              float: left;
+              background-color: #A32577;
+              color: white;
+              padding: 10px 20px;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              margin-right: 10px;">
+              Live Webinars
+            </button>
+            <button style="
+              float: left;
+              background-color: #fff;
+              color: #A32577;
+              padding: 10px 10px;
+              border: 1px solid #A32577;
+              border-radius: 5px;
+              cursor: pointer;">
+              Recorded Webinars
+            </button>
+          </div>
+          
+          
         </td>
       </tr>
+      
 
       <!-- Additional Resources Section -->
       <tr>
@@ -99,7 +183,7 @@
       <!-- Contact Support -->
       <tr>
         <td colspan="6" style="padding: 15px;">
-          <p style="margin: 0;">In case you need further assistance, write to us at <a style="color: #A32577; text-decoration: none;" href="mailto:support@zohomail.com">support@zohomail.com</a></p>
+          <p style="margin: 0;">In case you need further assistance, write to us at <a style="color: #A32577; text-decoration: none;" href="info@easydrop.asia">info@easydrop.asia</a></p>
         </td>
       </tr>
 
